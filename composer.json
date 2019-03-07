@@ -1,0 +1,14 @@
+{
+    "name": "bloom-ux/wp-filtrable-entries",
+    "description": "Framework para construir objetos filtrables a partir de contenidos de WordPress",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Felipe Lavín Z.",
+            "email": "felipe@bloom-ux.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
