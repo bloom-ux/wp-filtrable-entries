@@ -22,6 +22,9 @@ class Filtrable_WP_Term extends Filtrable_Term implements Filtrable_Term_Interfa
 	public function get_meta() {
 		$meta = get_term_meta( $this->get_id() );
 		$out  = array();
+		if ( ! $meta ) {
+			return $out;
+		}
 		foreach ( $meta as $key => $val ) {
 			$this_meta = new Filtrable_Meta( $key, $val );
 			$out[ $this_meta->get_key() ] = count( $this_meta->get_value() ) == 1 ? current( $this_meta->get_value() ) : $this_meta->get_value();
