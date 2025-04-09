@@ -3,7 +3,7 @@
 namespace Bloom_UX\WP_Filtrable_Entries;
 
 abstract class Filtrable_Entry_Abstract implements Filtrable_Entry_Interface, \JsonSerializable {
-	public function jsonSerialize(): mixed {
+	public function jsonSerialize() {
 		return (object) array(
 			'id'         => $this->get_id(),
 			'title'      => $this->get_title(),
